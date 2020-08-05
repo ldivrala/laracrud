@@ -18,7 +18,7 @@ class CreateCrudsTable extends Migration
             $table->string('name',20);
             $table->string('address',100)->nullable();
             $table->string('email',256)->unique();
-            $table->bigInteger('mobile')->length->unique();
+            $table->bigInteger('mobile')->unique();
             $table->date('DOB');
 
             $table->timestamps();
